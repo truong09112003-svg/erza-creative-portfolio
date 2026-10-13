@@ -2,15 +2,14 @@
 
 A responsive, static portfolio for Trường Nguyễn (Erza), built with HTML, CSS, and vanilla JavaScript. Project content lives separately in `js/projects.js` so it can be updated without changing the layout code.
 
-## Content still needed from Erza
+## Current portfolio content
 
-- Real project titles, categories, years, context, goals, role, and creative rationale.
-- Approved project images and video thumbnails (plus video URLs for playback).
-- Portrait photo, if desired.
-- Confirmed email address and professional social links.
-- Software/tools list and any additional biography details Erza wants public.
+- Five selected graphic design projects and a portrait image are sourced from Erza's public Behance portfolio.
+- The project details link to the original Behance page; descriptive text summarizes what is visible there.
+- Video thumbnails and playback links still need to be added when Erza shares video assets.
+- Contact email and other social links are left blank until Erza confirms what to publish.
 
-All current work tiles and project descriptions are explicitly labeled placeholders. They are illustrative layout samples, not claims of client work, outcomes, experience, or credentials. Do not publish them as a completed portfolio.
+Image assets are stored locally in `assets/images/`, so the site does not depend on remote image hosting.
 
 ## Update projects
 
@@ -18,7 +17,7 @@ Open `js/projects.js` and edit `window.ERZA_CONTENT`.
 
 ### Add a graphic design project
 
-Add an object in `projects` with `title`, `category`, `year`, `context`, `objective`, `role`, `idea`, `visual`, and `tone`. Use one of the existing category names or add a category to `designCategories`. The current visual is an intentionally generic typographic placeholder. To use real imagery, add an image path field and update the project renderer in `js/main.js` to render an `<img>` with a descriptive `alt`, `loading="lazy"`, and intrinsic dimensions.
+Add an object in `projects` with `title`, `category`, `year`, `image`, `context`, `objective`, `role`, `idea`, and `source`. Put the image in `assets/images/` and use its relative path. Use one of the existing category names or add a category to `designCategories`.
 
 ### Add video
 
